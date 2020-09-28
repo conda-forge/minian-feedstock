@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/3d/3d/21520cc69ba85a4f48b2a0baa631f2473f9173f6af3f6600a0763cc97a8b/MiniAn-0.2.5.tar.gz
-  sha256: fa4c9a1fd5fc1569b2e8afa66e04a18772a39a32ea5c0fa6d6cbe3a8e26ed360
+  url: https://test-files.pythonhosted.org/packages/6a/8d/510014b9b456d7ca504f11053a3f4a1bf7900f0f117bce3b1021bafcd3e6/MiniAn-0.2.8.tar.gz
+  sha256: f586a2d16d85f3f4861b7c7b8e040383a01b31dc9c53bff72e9903897ad5574b
 
 build:
   number: 0
@@ -119,3 +119,4 @@ about:
 extra:
   recipe-maintainers:
     - zsinnema
+    - phildong
