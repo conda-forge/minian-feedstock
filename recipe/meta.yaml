@@ -108,10 +108,14 @@ test:
   commands:
     - minian-install --demo --notebooks
 <<<<<<< HEAD
+<<<<<<< HEAD
     # - pytest -v --color=yes --cov=minian --pyargs minian
 =======
     - pytest -v --color=yes --cov=minian --pyargs minian
 >>>>>>> Bump to version 0.2.9
+=======
+    # - pytest -v --color=yes --cov=minian --pyargs minian
+>>>>>>> 6e22a17b1d96e8563b3cfc34f10ba0244733836b
 
 about:
   home: https://github.com/DeniseCaiLab/minian
