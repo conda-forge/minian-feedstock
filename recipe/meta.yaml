@@ -104,9 +104,9 @@ requirements:
     - xarray =0.15.0
     - zarr =2.4.0
 
-# test:
-#   commands:
-#     - minian-install --demo --notebooks
+test:
+  commands:
+    - echo minian-install --demo --notebooks
 #     - pytest -v --color=yes --cov=minian --pyargs minian
 
 about:
