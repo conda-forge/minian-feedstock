@@ -10,7 +10,7 @@ source:
   sha256: 1f6f655c483edb34f8d32f70dcb6c01147fbe6ddee2c0cc1467c6ca49902a8af
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - minian-install = minian.install:main
@@ -34,7 +34,7 @@ requirements:
     - ipython =7.12.0
     - ipywidgets =7.5.1
     - jupyter =1.0.0
-    - matplotlib =3.1.3
+    - matplotlib-base =3.1.3
     - natsort =7.0.1
     - netcdf4 =1.5.3
     - networkx =2.4
@@ -78,7 +78,7 @@ requirements:
     - ipython =7.12.0
     - ipywidgets =7.5.1
     - jupyter =1.0.0
-    - matplotlib =3.1.3
+    - matplotlib-base =3.1.3
     - natsort =7.0.1
     - netcdf4 =1.5.3
     - networkx =2.4
