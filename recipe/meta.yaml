@@ -1,22 +1,13 @@
 {% set name = "MiniAn" %}
-<<<<<<< HEAD
 {% set version = "0.3.1" %}
-=======
-{% set version = "0.3.0" %}
->>>>>>> chore: update to v0.3.0
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-<<<<<<< HEAD
   url: https://test-files.pythonhosted.org/packages/63/1f/ede8a5190ef92a0ab265cbc3f3480e60011761b9a92662c22013f7d9aa84/MiniAn-0.3.1.tar.gz
   sha256: 69ec6be7f4bef19df54f47e3e721afa696e6ecc78b2611f8a03cb28d044a9bda
-=======
-  url: https://test-files.pythonhosted.org/packages/ff/89/4c42afce9bc46853443561620c61ee3f8faa4c398546d81fcdf82e92ed65/MiniAn-0.3.0.tar.gz
-  sha256: a76ac7b0c6a1ca2461a4621976ccee16d0bc7120cb5de2ce66e728125bdc7c48
->>>>>>> chore: update to v0.3.0
 
 build:
   number: 2
