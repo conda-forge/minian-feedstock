@@ -110,7 +110,6 @@ requirements:
 test:
   commands:
     - minian-install --demo --notebooks
-    - pytest -v --color=yes --cov=minian --pyargs minian
 
 about:
   home: https://github.com/DeniseCaiLab/minian
