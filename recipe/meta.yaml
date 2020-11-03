@@ -10,7 +10,7 @@ source:
   sha256: 1f6f655c483edb34f8d32f70dcb6c01147fbe6ddee2c0cc1467c6ca49902a8af
 
 build:
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - minian-install = minian.install:main
