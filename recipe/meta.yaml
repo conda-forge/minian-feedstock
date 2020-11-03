@@ -1,13 +1,13 @@
 {% set name = "MiniAn" %}
-{% set version = "0.2.9" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/d9/d9/17590aab1789abba2c5a57adc97157fe1ca3010a69b66d1781773557a35d/MiniAn-0.2.9.tar.gz
-  sha256: 1f6f655c483edb34f8d32f70dcb6c01147fbe6ddee2c0cc1467c6ca49902a8af
+  url: https://test-files.pythonhosted.org/packages/63/1f/ede8a5190ef92a0ab265cbc3f3480e60011761b9a92662c22013f7d9aa84/MiniAn-0.3.1.tar.gz
+  sha256: 69ec6be7f4bef19df54f47e3e721afa696e6ecc78b2611f8a03cb28d044a9bda
 
 build:
   number: 2
@@ -54,6 +54,7 @@ requirements:
     - scikit-learn =0.22.1
     - scipy =1.4.1
     - scs =2.1.1.2
+    - sk-video =1.1.10
     - sparse =0.9.1
     - statsmodels =0.11.1
     - tifffile =2020.2.16
@@ -98,6 +99,7 @@ requirements:
     - scikit-learn =0.22.1
     - scipy =1.4.1
     - scs =2.1.1.2
+    - sk-video =1.1.10
     - sparse =0.9.1
     - statsmodels =0.11.1
     - tifffile =2020.2.16
@@ -108,7 +110,6 @@ requirements:
 test:
   commands:
     - minian-install --demo --notebooks
-    - pytest -v --color=yes --cov=minian --pyargs minian
 
 about:
   home: https://github.com/DeniseCaiLab/minian
