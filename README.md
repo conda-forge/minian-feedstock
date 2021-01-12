@@ -5,11 +5,9 @@ Home: https://github.com/DeniseCaiLab/minian
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/minian-feedstock/blob/master/LICENSE.txt)
 
 Summary: MiniAn is an analysis pipeline and visualization tool inspired by both CaImAn and MIN1PIPE package specifically for Miniscope data.
-
-
 
 Current build status
 ====================
