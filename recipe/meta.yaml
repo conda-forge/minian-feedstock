@@ -72,9 +72,13 @@ test:
 
 about:
   home: https://github.com/DeniseCaiLab/minian
-  summary: 'MiniAn is an analysis pipeline and visualization tool inspired by both CaImAn and MIN1PIPE package specifically for Miniscope data.'
+  summary: miniscope analysis pipeline with interactive visualizations
   license: GPL-3.0-or-later
   license_file: LICENSE
+  doc_url: https://minian.readthedocs.io
+  description: |
+    MiniAn is an analysis pipeline and visualization tool inspired by both
+    CaImAn and MIN1PIPE package specifically for Miniscope data.
 
 extra:
   recipe-maintainers:
