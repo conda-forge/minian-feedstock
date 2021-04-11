@@ -65,7 +65,6 @@ requirements:
     - zarr =2.4.0
     - pymetis=2020.1
     - rechunker=0.3.3
-    - medpy=0.4.0
 
 test:
   commands:
