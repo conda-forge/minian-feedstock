@@ -1,15 +1,16 @@
 {% set name = "MiniAn" %}
-{% set version = "0.3.1" %}
+{% set version = "1.0.0rc0.post3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/63/1f/ede8a5190ef92a0ab265cbc3f3480e60011761b9a92662c22013f7d9aa84/MiniAn-0.3.1.tar.gz
-  sha256: 69ec6be7f4bef19df54f47e3e721afa696e6ecc78b2611f8a03cb28d044a9bda
+  url: https://test-files.pythonhosted.org/packages/46/a1/b33e93634d4151ac3a3ccd4571e24c0b4ee96ad59be1beb4df1b9311d327/minian-{{ version }}.tar.gz
+  sha256: c87a520c478e3ff4a8eea68fa4ca6d5d9b1087b22f4cafe9dfb868b016332def
 
 build:
+  number: 0
   script: "{{ PYTHON }} -m pip install -vv --no-deps . "
   entry_points:
     - minian-install = minian.install:main
