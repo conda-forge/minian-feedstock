@@ -10,8 +10,7 @@ source:
   sha256: 69ec6be7f4bef19df54f47e3e721afa696e6ecc78b2611f8a03cb28d044a9bda
 
 build:
-  number: 3
-  script: "{{ PYTHON }} -m pip install -vv --no-deps --ignore-installed . "
+  script: "{{ PYTHON }} -m pip install -vv --no-deps . "
   entry_points:
     - minian-install = minian.install:main
 
