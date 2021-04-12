@@ -5,3 +5,5 @@ channels:
     - simpleitk
     - conda-forge
     - defaults
+  targets:
+    - ["conda-forge", "main"]
