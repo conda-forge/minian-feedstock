@@ -1,2 +1,3 @@
-conda config --env --add channels simpleitk
-conda config --env --add channels bioconda
+@echo off
+
+pip install --no-deps medpy==0.4.0
