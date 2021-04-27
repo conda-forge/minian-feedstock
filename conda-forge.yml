@@ -1,9 +1,1 @@
 conda_forge_output_validation: true
-channels:
-  sources:
-    - bioconda
-    - simpleitk
-    - conda-forge
-    - defaults
-  targets:
-    - ["conda-forge", "main"]
