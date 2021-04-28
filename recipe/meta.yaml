@@ -1,13 +1,13 @@
 {% set name = "MiniAn" %}
-{% set version = "1.0.0rc0.post3" %}
+{% set version = "1.0.0rc0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/46/a1/b33e93634d4151ac3a3ccd4571e24c0b4ee96ad59be1beb4df1b9311d327/minian-{{ version }}.tar.gz
-  sha256: c87a520c478e3ff4a8eea68fa4ca6d5d9b1087b22f4cafe9dfb868b016332def
+  url: https://github.com/denisecailab/minian/archive/v{{ version }}.tar.gz
+  sha256: 27fb60aef2f5de502055c64fbc9b9ff36c9c7b6f281deb85df9bbd260867b7bd
 
 build:
   number: 0
