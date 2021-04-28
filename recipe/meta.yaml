@@ -61,6 +61,8 @@ requirements:
     - tqdm =4.43.0
     - xarray =0.17.0
     - zarr =2.4.0
+    - pymetis =2020.1
+    - rechunker =0.3.3
 test:
   commands:
     - minian-install --demo --notebooks
