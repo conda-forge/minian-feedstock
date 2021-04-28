@@ -63,6 +63,7 @@ requirements:
     - zarr =2.4.0
     - pymetis =2020.1
     - rechunker =0.3.3
+    - simpleitk =2.0.2
 test:
   commands:
     - minian-install --demo --notebooks
