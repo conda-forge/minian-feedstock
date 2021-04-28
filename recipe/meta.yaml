@@ -29,11 +29,11 @@ requirements:
     - distributed =2021.2.0
     - ecos >=2.0.7
     - ffmpeg
-    - ffmpeg-python =0.2.0
+    - ffmpeg-python >=0.2.0
     - fftw
     - holoviews =1.12.7
-    - jupyter =1.0.0
-    - matplotlib-base =3.1.3
+    - jupyter
+    - matplotlib-base
     - natsort
     - netcdf4
     - networkx =2.4
@@ -42,16 +42,16 @@ requirements:
     - opencv =4.2.0
     - pandas =1.2.3
     - panel =0.8.0
-    - pyfftw =0.12.0
+    - pyfftw >=0.12.0
     - python 3.8.*
     - pip
     - scikit-image =0.18.1
     - scikit-learn =0.22.1
-    - scipy =1.4.1
+    - scipy >=1.4.1
     - scs
     - sk-video
     - sparse =0.11.2
-    - statsmodels =0.11.1
+    - statsmodels >=0.11.1
     - tifffile
     - xarray =0.17.0
     - zarr
