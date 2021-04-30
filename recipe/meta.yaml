@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/denisecailab/minian/archive/v{{ version }}.tar.gz
-  sha256: 27fb60aef2f5de502055c64fbc9b9ff36c9c7b6f281deb85df9bbd260867b7bd
+  sha256: c6c17253c65b4cbce79bb5699cd12f3de2b798672fcf98924b13b526e2d34562
 
 build:
   number: 0
