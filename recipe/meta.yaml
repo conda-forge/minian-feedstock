@@ -1,5 +1,5 @@
 {% set name = "MiniAn" %}
-{% set version = "1.0.0rc0" %}
+{% set version = "1.0.0rc1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/denisecailab/minian/archive/v{{ version }}.tar.gz
-  sha256: 27fb60aef2f5de502055c64fbc9b9ff36c9c7b6f281deb85df9bbd260867b7bd
+  sha256: c6c17253c65b4cbce79bb5699cd12f3de2b798672fcf98924b13b526e2d34562
 
 build:
   number: 0
@@ -33,7 +33,7 @@ requirements:
     - fftw
     - holoviews =1.12.7
     - jupyter
-    - matplotlib-base
+    - matplotlib-base 3.2.*
     - natsort
     - netcdf4
     - networkx =2.4
@@ -53,7 +53,7 @@ requirements:
     - sparse =0.11.2
     - statsmodels >=0.11.1
     - tifffile
-    - xarray =0.17.0
+    - xarray =0.16.2
     - zarr
     - pymetis =2020.1
     - rechunker =0.3.3
