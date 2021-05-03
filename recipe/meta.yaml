@@ -1,5 +1,5 @@
 {% set name = "MiniAn" %}
-{% set version = "1.0.0rc1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/denisecailab/minian/archive/v{{ version }}.tar.gz
-  sha256: c6c17253c65b4cbce79bb5699cd12f3de2b798672fcf98924b13b526e2d34562
+  sha256: 2a057cebf4c4c5276c5b143165a1efd8a765d5b4746990a0f216f735328fcda4
 
 build:
   number: 0
