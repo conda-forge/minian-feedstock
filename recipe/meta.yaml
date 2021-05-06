@@ -1,5 +1,5 @@
 {% set name = "MiniAn" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/denisecailab/minian/archive/v{{ version }}.tar.gz
-  sha256: 2a057cebf4c4c5276c5b143165a1efd8a765d5b4746990a0f216f735328fcda4
+  sha256: 9b03c66b00acf73e3706ed9ad790183d4e5736b184806eadfff3727a53ddf7e4
 
 build:
   number: 0
@@ -42,6 +42,7 @@ requirements:
     - opencv =4.2.0
     - pandas =1.2.3
     - panel =0.8.0
+    - param 1.9.*
     - pyfftw >=0.12.0
     - python 3.8.*
     - pip
