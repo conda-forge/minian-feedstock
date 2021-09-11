@@ -1,5 +1,5 @@
 {% set name = "MiniAn" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/denisecailab/minian/archive/v{{ version }}.tar.gz
-  sha256: 9b03c66b00acf73e3706ed9ad790183d4e5736b184806eadfff3727a53ddf7e4
+  sha256: fd03dbf8bdc5d856846b78c5e27d112dc1c19634629ddb7250425d3e818b877a
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install -vv --no-deps . "
+  script: '{{ PYTHON }} -m pip install -vv --no-deps . '
   entry_points:
     - minian-install = minian.install:main
 
