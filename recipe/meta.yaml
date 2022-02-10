@@ -1,5 +1,5 @@
 {% set name = "MiniAn" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/denisecailab/minian/archive/v{{ version }}.tar.gz
-  sha256: fd03dbf8bdc5d856846b78c5e27d112dc1c19634629ddb7250425d3e818b877a
+  sha256: 3c7fae1aa22efe3d40535840f1a74dcd2aa791a3f5299fe00f2d2c584fd8daad
 
 build:
   number: 0
@@ -43,7 +43,7 @@ requirements:
     - pandas =1.2.3
     - panel =0.8.0
     - param 1.9.*
-    - pyfftw >=0.12.0
+    - pyfftw =0.12.0
     - python 3.8.*
     - pip
     - scikit-image =0.18.1
