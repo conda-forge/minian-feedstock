@@ -10,7 +10,7 @@ source:
   sha256: 7a4bf1cb961128c42ed13b9f3b47076ccfd3e7f0d460e4802fff091ee2a20206
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install -vv --no-deps . '
   entry_points:
     - minian-install = minian.install:main
@@ -32,6 +32,7 @@ requirements:
     - ffmpeg-python >=0.2.0
     - fftw
     - holoviews =1.12.7
+    - jinja2=2.11.3
     - jupyter
     - matplotlib-base 3.2.*
     - natsort
