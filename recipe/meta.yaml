@@ -32,7 +32,7 @@ requirements:
     - ffmpeg-python >=0.2.0
     - fftw
     - holoviews =1.12.7
-    - jinja2=2.11.3
+    - jinja2 =2.11.3
     - jupyter
     - matplotlib-base 3.2.*
     - natsort
