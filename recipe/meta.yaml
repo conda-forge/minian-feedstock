@@ -1,75 +1,78 @@
-{% set name = "MiniAn" %}
-{% set version = "1.2.1" %}
+{% set name = "minian" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/denisecailab/minian/archive/v{{ version }}.tar.gz
-  sha256: 7a4bf1cb961128c42ed13b9f3b47076ccfd3e7f0d460e4802fff091ee2a20206
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/minian-{{ version }}.tar.gz
+  sha256: bfc7e781228b148d8a004c1692fa239773a1a7754795ee3b536e955e969aca77
 
 build:
-  number: 1
-  script: '{{ PYTHON }} -m pip install -vv --no-deps . '
-  entry_points:
-    - minian-install = minian.install:main
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
-    - python 3.8.*
+    - python {{ python_min }}
+    - pdm-backend
     - pip
-    - setuptools
-
   run:
-    - bokeh =1.4.0
+    - python >={{ python_min }}
+    - bokeh >=1.4.0
     - cvxpy >=1.1.11
-    - dask =2021.2.0
-    - datashader =0.12.1
-    - distributed =2021.2.0
+    - dask >=2025.1.0
+    - datashader >=0.12.1
+    - distributed >=2025.1.0
     - ecos >=2.0.7
     - ffmpeg
     - ffmpeg-python >=0.2.0
-    - fftw
-    - holoviews =1.12.7
-    - jinja2 =2.11.3
+    - holoviews >=1.12.7
+    - jinja2 >=2.11.3
     - jupyter
-    - matplotlib-base 3.2.*
+    - matplotlib-base
+    - medpy >=0.4.0
     - natsort
     - netcdf4
-    - networkx =2.4
-    - numba =0.52.0
-    - numpy =1.20.2
-    - opencv =4.2.0
-    - pandas =1.2.3
-    - panel =0.8.0
-    - param 1.9.*
-    - pyfftw =0.12.0
-    - python 3.8.*
-    - pip
-    - scikit-image =0.18.1
-    - scikit-learn =0.22.1
+    - networkx >=2.4
+    - numba >=0.52.0
+    - numpy >=1.20.2
+    - opencv >=4.2.0.34
+    - pandas >=1.2.3
+    - panel >=0.8.0
+    - pyfftw >=0.12.0
+    - rechunker >=0.3.3
+    - scikit-image >=0.18.1
+    - scikit-learn >=0.22.1
     - scipy >=1.4.1
     - scs
+    - simpleitk >=2.0.2
     - sk-video
-    - sparse =0.11.2
+    - sparse >=0.11.2
     - statsmodels >=0.11.1
     - tifffile
-    - xarray =0.16.2
+    - xarray >=0.17.0
     - zarr
-    - pymetis =2020.1
-    - rechunker =0.3.3
-    - simpleitk =2.0.2
+
 test:
+  imports:
+    - minian
   commands:
-    - minian-install --demo --notebooks
+    - minian-install --help
+    - pip check
+  requires:
+    - pip
+    - python {{ python_min }}
 
 about:
-  home: https://github.com/DeniseCaiLab/minian
+  home: https://github.com/miniscope/minian
   summary: miniscope analysis pipeline with interactive visualizations
   license: GPL-3.0-or-later
   license_file: LICENSE
-  doc_url: https://minian.readthedocs.io
+  doc_url: https://minian.readthedocs.io/
+  dev_url: https://github.com/miniscope/minian
   description: |
     MiniAn is an analysis pipeline and visualization tool inspired by both
     CaImAn and MIN1PIPE package specifically for Miniscope data.
@@ -78,3 +81,4 @@ extra:
   recipe-maintainers:
     - zsinnema
     - phildong
+    - daharoni
