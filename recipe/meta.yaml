@@ -1,5 +1,5 @@
 {% set name = "minian" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/minian-{{ version }}.tar.gz
-  sha256: ee5a0b6458408efa542342ca84e74be8a3ce756421b9507a1552b26c44b06c49
+  sha256: c1f4437ccec8ba9abe88974c4a45f1b94aa26ce9bcc013ed6571c40423f9bf0e
 
 build:
   noarch: python
